@@ -33,7 +33,7 @@
             "name": "storage.type"
         },
         {
-            "match": "\\b(static|transient|final)\\b",
+            "match": "\\b(static|transient|final|native)\\b",
             "name": "storage"
         },
         {
@@ -47,6 +47,10 @@
         {
             "match": "@([_$a-zA-Z][_$a-zA-Z0-9]*\\.)*[_$a-zA-Z][_$a-zA-Z0-9]*\\>",
             "name": "string"
+        },
+        {
+            "match": "<[^\\>]+\\>",
+            "name": "storage.type"
         }
     ]
 }
