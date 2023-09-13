@@ -1,0 +1,31 @@
+{
+    "name": "proguard-language",
+    "displayName": "ProGuard Language",
+    "description": "Syntax highlighting for ProGuard configuration files.",
+    "version": "1.0.0",
+    "engines": {
+      "vscode": "^1.60.0"
+    },
+    "categories": ["Programming Languages"],
+    "contributes": {
+      "languages": [
+        {
+          "id": "proguard",
+          "aliases": ["ProGuard", "proguard"],
+          "extensions": [".pro", ".proguard"],
+          "configuration": "./language-configuration.json"
+        }
+      ],
+      "grammars": [
+        {
+          "language": "proguard",
+          "scopeName": "source.proguard",
+          "path": "./syntaxes/proguard.tmLanguage.json"
+        }
+      ]
+    },
+    "main": "./extension.js",
+    "activationEvents": [
+		"workspaceContains:**/*.pro"
+	]
+}
