@@ -9,8 +9,8 @@
             "name": "comment"
         },
         {
-            "match": "-keep[a-z,]*>",
-            "name": "storage.type"
+            "match": "^-(?:[a-z]+,?)+",
+            "name": "string"
         },
         {
             "match": "-(optimizations|dontwarn|assumenosideeffects)\\>",
